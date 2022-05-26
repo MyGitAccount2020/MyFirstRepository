@@ -10,8 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { AppComponent } from './app.component';
 import { AlertComponent } from './_components';
-import { HomeComponent } from './home';
-
+import { HomeComponent } from './home';;
+import { ProfileComponent } from './profile/profile.component';
+import { ContactComponent } from './contact/contact.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
     imports: [
         BrowserModule,
@@ -23,7 +25,10 @@ import { HomeComponent } from './home';
         AppComponent,
         AlertComponent,
         HomeComponent
-    ],
+,
+        ProfileComponent ,
+        ContactComponent ,
+        DashboardComponent  ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
