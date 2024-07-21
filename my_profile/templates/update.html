@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Update Profile</h1>
+    </header>
+    <div class="container">
+        <form method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="{{ profile.name }}" required>
+
+            <label for="objective">Objective:</label>
+            <textarea id="objective" name="objective" required>{{ profile.objective }}</textarea>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" required>{{ profile.skills }}</textarea>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" required>{{ profile.experience }}</textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" required>{{ profile.education }}</textarea>
+
+            <label for="projects">Projects:</label>
+            <textarea id="projects" name="projects" required>{{ profile.projects }}</textarea>
+
+            <label for="certifications">Certifications:</label>
+            <textarea id="certifications" name="certifications" required>{{ profile.certifications }}</textarea>
+
+            <label for="languages">Languages:</label>
+            <textarea id="languages" name="languages" required>{{ profile.languages }}</textarea>
+
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+</body>
+</html>

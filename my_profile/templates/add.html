@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Add Profile</h1>
+    </header>
+    <div class="container">
+        <form method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="objective">Objective:</label>
+            <textarea id="objective" name="objective" required></textarea>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" required></textarea>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" required></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" required></textarea>
+
+            <label for="projects">Projects:</label>
+            <textarea id="projects" name="projects" required></textarea>
+
+            <label for="certifications">Certifications:</label>
+            <textarea id="certifications" name="certifications" required></textarea>
+
+            <label for="languages">Languages:</label>
+            <textarea id="languages" name="languages" required></textarea>
+
+            <button type="submit">Add Profile</button>
+        </form>
+    </div>
+</body>
+</html>

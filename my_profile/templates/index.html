@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Profiles</h1>
+    </header>
+    <div class="container">
+        <a href="{{ url_for('add_profile') }}">Add Your Details</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Objective</th>
+                    <th>Skills</th>
+                    <th>Experience</th>
+                    <th>Education</th>
+                    <th>Projects</th>
+                    <th>Certifications</th>
+                    <th>Languages</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for profile in profiles %}
+                <tr>
+                    <td>{{ profile.name }}</td>
+                    <td>{{ profile.objective }}</td>
+                    <td>{{ profile.skills }}</td>
+                    <td>{{ profile.experience }}</td>
+                    <td>{{ profile.education }}</td>
+                    <td>{{ profile.projects }}</td>
+                    <td>{{ profile.certifications }}</td>
+                    <td>{{ profile.languages }}</td>
+                    <td>
+                        <a href="{{ url_for('update_profile', id=profile._id) }}">Update</a>
+                        <a href="{{ url_for('delete_profile', id=profile._id) }}">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
