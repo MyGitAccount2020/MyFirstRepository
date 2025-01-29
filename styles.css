@@ -42,7 +42,7 @@ body::-webkit-scrollbar-track {
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: 90%;
+  width: 75%;
   /* Adjusted width to 90% */
   margin: 0 auto;
   /* Centers the navbar horizontally */
@@ -908,6 +908,78 @@ body {
   background-position: center;
   background-image: url('assets/image3.jpg');
 }
+@media (max-width: 1024px) {
+  .parent-card {
+    width: 50%;
+    height: auto;
+    top: 100px;
+    margin: 0 auto;
+  }
+
+  .middle-card {
+    position: relative;
+    width: 80%;
+    height: auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+  }
+/* 
+  .child-card {
+    position: relative;
+    width: 70%;
+    height: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+  } */
+}
+
+@media (max-width: 768px) {
+    .parent-card {
+        left: 18%;
+        width: 52%;
+        height: 40%;
+        top: 52px;
+    }
+
+    .middle-card .circle-card-image {
+      width: 200px;
+    height: 200px;
+  }
+    .middle-card {
+      top: -50%;
+      left: 10%;
+      width: 34%;
+  }
+
+  .child-card {
+    top: 38%;
+    width: 200px;
+    left: 27%;
+  }
+  .child-card .circle-card-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* 
+@media (max-width: 480px) {
+  .parent-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .middle-card {
+    width: 95%;
+  }
+
+  .child-card {
+    width: 95%;
+  }
+} */
 
 /* =========================image color change slider============== */
 .image-slider-section {
