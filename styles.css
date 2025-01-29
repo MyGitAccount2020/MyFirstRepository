@@ -1148,7 +1148,7 @@ img-comparison-slider .text-primary {
 @media (max-width: 750px) {
   .content-container {
     flex-direction: column;
-    padding: 10px;
+    padding: 20%;
   }
 
   .details-image-customize img {
