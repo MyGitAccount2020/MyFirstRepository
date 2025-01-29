@@ -956,6 +956,7 @@ body {
   }
 
   .child-card {
+    height: 30%;
     top: 38%;
     width: 200px;
     left: 27%;
