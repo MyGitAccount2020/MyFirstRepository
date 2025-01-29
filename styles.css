@@ -965,21 +965,6 @@ body {
     height: 200px;
   }
 }
-/* 
-@media (max-width: 480px) {
-  .parent-card {
-    width: 90%;
-    height: auto;
-  }
-
-  .middle-card {
-    width: 95%;
-  }
-
-  .child-card {
-    width: 95%;
-  }
-} */
 
 /* =========================image color change slider============== */
 .image-slider-section {
